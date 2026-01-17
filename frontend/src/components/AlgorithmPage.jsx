@@ -180,7 +180,8 @@ const AlgorithmPage = () => {
 
 
   // const BASE_URL = "http://localhost:5000/api";
-  const BASE_URL = "https://dsa-visualization-j0uo.onrender.com/api";
+  const BASE_URL="https://dsa-visualizer-ertx.onrender.com/api"
+
 
 
   // Set default algorithm based on category
@@ -2243,15 +2244,17 @@ const handleCreateGraphFromMatrix = (matrixString) => {
       <ComplexityAnalysis />
     ) : (
       <div className="algorithm-page">
+        {/* Improved Header Section */}
         <div className="algorithm-header">
           <div className="header-left">
             <button 
               onClick={toggleSidebar}
               className="sidebar-toggle"
+              aria-label="Toggle sidebar"
             >
               {isSidebarOpen ? '✕' : '☰'}
             </button>
-            <h2>{selectedAlgorithm.replace(/-/g, ' ')} Visualization</h2>
+            <h2>{selectedAlgorithm.replace(/-/g, ' ').toUpperCase()} Visualization</h2>
           </div>
           <div className="header-right">
             <Link to="/home" className="nav-button">

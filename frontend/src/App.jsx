@@ -9,6 +9,8 @@ import ContactPage from './pages/ContactPage';
 import AboutPage from './pages/AboutPage';
 import LearnPage from './pages/LearnPage';
 import DemoPage from './pages/DemoPage';
+import AlgorithmCompare from './components/AlgorithmCompare';
+import ComplexityAnalysis from './components/ComplexityAnalysis';
 import './styles/global.css';
 
 function App() {
@@ -20,8 +22,8 @@ function App() {
             <Route path="/" element={<LandingPage />} />
             <Route path="/home" element={<Homepage />} />
             <Route path="/:category" element={<AlgorithmPage />} />
-            <Route path="/algorithm-compare" element={<AlgorithmPage />} />
-            <Route path="/complexity-analysis" element={<AlgorithmPage />} />
+            <Route path="/algorithm-compare" element={<AlgorithmCompare />} />
+            <Route path="/complexity-analysis" element={<ComplexityAnalysis />} />
             {/* New Routes */}
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/about" element={<AboutPage />} />

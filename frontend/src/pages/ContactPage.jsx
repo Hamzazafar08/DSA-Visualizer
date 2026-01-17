@@ -55,11 +55,11 @@ const ContactPage = () => {
       <header className="contact-header">
         <nav className="contact-nav">
           <Link to="/" className="nav-brand">
-            <span className="brand-text">VISUALIZE</span>
+            <span className="brand-text">DSA VISUALIZER</span>
           </Link>
           <div className="nav-actions">
             <Link to="/home" className="nav-button">
-              Home
+              ← Back to Home
             </Link>
             <ThemeToggle />
           </div>
@@ -90,6 +90,7 @@ const ContactPage = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
+                    placeholder="Enter your full name"
                   />
                 </div>
                 <div className="form-group">
@@ -101,6 +102,7 @@ const ContactPage = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
+                    placeholder="Enter your email address"
                   />
                 </div>
               </div>
@@ -114,6 +116,7 @@ const ContactPage = () => {
                   value={formData.subject}
                   onChange={handleChange}
                   required
+                  placeholder="What is this regarding?"
                 />
               </div>
               
@@ -126,6 +129,7 @@ const ContactPage = () => {
                   value={formData.message}
                   onChange={handleChange}
                   required
+                  placeholder="Tell us more about your inquiry..."
                 ></textarea>
               </div>
               
@@ -166,6 +170,14 @@ const ContactPage = () => {
                 <div className="faq-item">
                   <h4>Do you have mobile app?</h4>
                   <p>Currently we're web-only, but the website is fully responsive and works great on mobile devices.</p>
+                </div>
+                <div className="faq-item">
+                  <h4>Which algorithms are supported?</h4>
+                  <p>We support 50+ algorithms across sorting, trees, graphs, dynamic programming, and more categories.</p>
+                </div>
+                <div className="faq-item">
+                  <h4>How often is the platform updated?</h4>
+                  <p>We regularly add new features and algorithms based on user feedback and community requests.</p>
                 </div>
               </div>
             </div>

@@ -51,8 +51,8 @@ const app = express();
 app.use(
   cors({
     origin: [
-      // "http://localhost:5173",                  // for local development
-      "https://dsa-visualization-two.vercel.app" // for deployed frontend
+      "http://localhost:5173", 
+                       // for local development
     ],
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization", "Accept"],
